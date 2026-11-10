@@ -268,6 +268,3 @@ Docker 构建暂缓。关播、改标题、关注、管理后台和音视频服�
 
 Redis Pub/Sub 不保存断线期间的历史投递；保存 ACK 表示 SQLite 已保存，不代表所有观众收件。后续恢复由增量查询与前端同步共同完成。
 
-## 参考
-
-学习路线与文档组织参考 [Lectuce/live-stream](https://github.com/Lectuce/live-stream)。本实现选择 Beego / SQLite，目录、协议和完成范围以当前代码为准；没有沿用参考项目的 Gin / GORM / MySQL / ZooKeeper，也没有把其 room_seq、自动恢复、采样或性能声明写作已实现能力。
