@@ -1,0 +1,8 @@
+bind 127.0.0.1
+protected-mode yes
+port 16379
+daemonize no
+dir ./data/redis
+dbfilename dump.rdb
+appendonly yes
+logfile ""

@@ -1,0 +1,12 @@
+process.roles=broker,controller
+node.id=1
+controller.quorum.bootstrap.servers=127.0.0.1:19093
+listeners=PLAINTEXT://127.0.0.1:19092,CONTROLLER://127.0.0.1:19093
+advertised.listeners=PLAINTEXT://127.0.0.1:19092
+listener.security.protocol.map=PLAINTEXT:PLAINTEXT,CONTROLLER:PLAINTEXT
+inter.broker.listener.name=PLAINTEXT
+controller.listener.names=CONTROLLER
+log.dirs=./data/kafka
+offsets.topic.replication.factor=1
+auto.create.topics.enable=false
+log.retention.hours=24

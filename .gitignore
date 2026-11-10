@@ -1,0 +1,39 @@
+# Runtime state and generated files
+/data/
+/logs/
+/tools/
+/bin/
+/tmp/
+/output/
+/docker-artifacts/
+/test-results/
+*.db
+*.db-wal
+*.db-shm
+*.pid
+*.log
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+cookies*.txt
+
+# Local configuration; only examples belong in Git
+/conf/*
+!/conf/*.example
+.env
+.env.*
+!.env.example
+
+# Frontend dependency cache and build output
+**/node_modules/
+**/.next/
+**/.vinext/
+**/dist/
+*.tsbuildinfo
+
+# Local editor and OS metadata
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

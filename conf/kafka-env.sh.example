@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Source this file in each Kafka CLI terminal. Adjust JAVA_HOME to your own JRE.
+live_project_root=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)
+export JAVA_HOME=${JAVA_HOME:-$live_project_root/tools/jre-21}
+export PATH="$JAVA_HOME/bin:$PATH"
+export GOPROXY=https://mirrors.aliyun.com/goproxy/,direct
